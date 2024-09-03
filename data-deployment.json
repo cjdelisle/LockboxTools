@@ -1,0 +1,43 @@
+{
+	"network": "base",
+	"deployer": "0xacd1eCf2C0cF59C8D2107148C00A21799079b9A2",
+	"lockboxTools": {
+		"addr": "0xea3c14F74e16E8462925f82Ad8d528a5d804617D",
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract ILockBox",
+						"name": "boxAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint32[]",
+						"name": "ids",
+						"type": "uint32[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "kvKeys",
+						"type": "string[]"
+					}
+				],
+				"name": "getLockups",
+				"outputs": [
+					{
+						"internalType": "bytes[]",
+						"name": "data",
+						"type": "bytes[]"
+					},
+					{
+						"internalType": "bytes[][]",
+						"name": "kvValues",
+						"type": "bytes[][]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		]
+	}
+}
